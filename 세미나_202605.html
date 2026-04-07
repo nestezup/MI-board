@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>[LX MI] 2026년 5월 세미나/컨퍼런스 목록</title>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:'맑은 고딕','Malgun Gothic',sans-serif;margin:0;padding:20px;background:#f0f4f8;color:#222;font-size:14px}
+  h1{margin:0;font-size:20px;color:#1565C0}
+  .header{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+  .toggle-btn{padding:7px 16px;border-radius:6px;border:1px solid #1565C0;cursor:pointer;font-size:13px;background:#fff;color:#1565C0;margin-left:8px;font-family:inherit}
+  .toggle-btn.active{background:#1565C0;color:#fff}
+  .view{display:none}.view.active{display:block}
+  .modal-overlay{display:none}
+  .modal-overlay.open{display:flex!important}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <h1>📋 2026년 5월 — 세미나/컨퍼런스 목록</h1>
+    <div>
+      <button class="toggle-btn active" id="btn-cal" onclick="switchView('calendar')">📅 캘린더</button>
+      <button class="toggle-btn" id="btn-list" onclick="switchView('list')">☰ 목록</button>
+    </div>
+  </div>
+  <p style="margin:0 0 8px;font-size:13px;color:#555">탐색 기간: <strong>2026-05-01 ~ 2026-05-31</strong> &nbsp;|&nbsp; 발행일: 2026-04-07 &nbsp;|&nbsp; 총 <strong>20건</strong></p>
+  <div><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#AI/인공지능</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#클라우드</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#스타트업</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#게임/엔터</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#전기전력</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#방송/미디어</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#뷰티/화장품</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#기계/제조</span></div>
+  <p style="margin:10px 0 0;font-size:13px;background:#e8f5e9;padding:8px 12px;border-radius:6px;color:#2E7D32">💡 2026년 5월은 대형 AI/Tech 행사가 집중됩니다. AI EXPO KOREA(5/6~8)는 국내 최대 AI 전시회로 사전등록 시 무료이며, AWS Summit Seoul(5/20~21)은 100개 이상 세션이 준비된 클라우드 최대 행사입니다. 대부분의 주요 전시가 코엑스와 킨텍스에서 개최되므로, 일정 중복에 유의하여 사전등록을 권장합니다.</p>
+</div>
+
+<div id="view-calendar" class="view active">
+  <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08)">
+    <thead><tr style="background:#f0f4f8"><th style="padding:8px;font-size:13px;color:#555;font-weight:600">일</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">월</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">화</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">수</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">목</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">금</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">토</th></tr></thead>
+    <tbody>
+    <!-- Week 1: Apr27-May3 -->
+    <tr>
+      <td style="padding:8px;background:#f8f9fa;min-height:70px;vertical-align:top"></td>
+      <td style="padding:8px;background:#f8f9fa;min-height:70px;vertical-align:top"></td>
+      <td style="padding:8px;background:#f8f9fa;min-height:70px;vertical-align:top"></td>
+      <td style="padding:8px;background:#f8f9fa;min-height:70px;vertical-align:top"></td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">1</div>
+        <div onclick="openModal('MAY_01')" style="background:#2E7D32;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">노블라이프페스타 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">2</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">3</div>
+      </td>
+    </tr>
+    <!-- Week 2: May4-10 -->
+    <tr>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">4</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">5</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#E53935;font-weight:700;margin-bottom:2px">6</div>
+        <div onclick="openModal('MAY_AIEXPO')" style="background:#C62828;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">AI EXPO KOREA …</div>
+        <div onclick="openModal('MAY_AITECH')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">AI TECH 2026 …</div>
+        <div onclick="openModal('MAY_EPTK')" style="background:#F57F17;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">국제전기전력전시회 …</div>
+        <div onclick="openModal('MAY_IBK')" style="background:#7B1FA2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">IBK창공 데모데이</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">7</div>
+        <div onclick="openModal('MAY_DONGA')" style="background:#1976D2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">동아전람 복합전시 …</div>
+        <div onclick="openModal('MAY_MBC')" style="background:#2E7D32;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">MBC 건축박람회 …</div>
+        <div onclick="openModal('MAY_CHOO')" style="background:#0288D1;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">CHOO CHOO DAY</div>
+        <div onclick="openModal('MAY_TI')" style="background:#F57F17;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">TI 현장 교육</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">8</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">9</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">10</div>
+      </td>
+    </tr>
+    <!-- Week 3: May11-17 -->
+    <tr>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">11</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">12</div>
+        <div onclick="openModal('MAY_KOBA')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">KOBA 2026 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">13</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">14</div>
+        <div onclick="openModal('MAY_MEGA')" style="background:#2E7D32;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">메가쇼+트래블쇼 …</div>
+        <div onclick="openModal('MAY_CAFE')" style="background:#F57F17;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">카페디저트페어 …</div>
+        <div onclick="openModal('MAY_NET')" style="background:#1976D2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">차세대 네트워킹 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">15</div>
+        <div onclick="openModal('MAY_MAXPO')" style="background:#7B1FA2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">막걸리엑스포 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">16</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">17</div>
+      </td>
+    </tr>
+    <!-- Week 4: May18-24 -->
+    <tr>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">18</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">19</div>
+        <div onclick="openModal('MAY_KIMEX')" style="background:#F57F17;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">KIMEX 기계박람회 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">20</div>
+        <div onclick="openModal('MAY_AWS')" style="background:#C62828;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">AWS Summit Seoul …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">21</div>
+        <div onclick="openModal('MAY_PLAY')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">플레이엑스포 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">22</div>
+        <div onclick="openModal('MAY_CLIMATE')" style="background:#2E7D32;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">기후테크xAI 포럼 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">23</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">24</div>
+      </td>
+    </tr>
+    <!-- Week 5: May25-31 -->
+    <tr>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">25</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">26</div>
+        <div onclick="openModal('MAY_GAMEAICON')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">게임아이콘 서울 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">27</div>
+        <div onclick="openModal('MAY_ICEC')" style="background:#1976D2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">ICEC 2026 …</div>
+        <div onclick="openModal('MAY_COSMO')" style="background:#7B1FA2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">코스모뷰티서울 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">28</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+        <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">29</div>
+        <div onclick="openModal('MAY_SIDEX')" style="background:#0288D1;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">SIDEX 2026 …</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">30</div>
+      </td>
+      <td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+        <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">31</div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- List View -->
+<div id="view-list" class="view" style="max-width:800px;margin:0 auto">
+
+  <div onclick="openModal('MAY_AIEXPO')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #C62828;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">AI EXPO KOREA 2026 (국제인공지능대전)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/6(수)~8(금)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">(사)한국인공지능협회 &nbsp;|&nbsp; 코엑스 1층 Hall A &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 사전등록 무료</p>
+    <div><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI/Tech</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_AITECH')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #1565C0;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">AI TECH 2026 - AI 융합 비즈니스 개발 컨퍼런스</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/6(수)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">(주)첨단, 서울메쎄 &nbsp;|&nbsp; 코엑스 3층 E홀 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 유료(140,000원~)</p>
+    <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI/Tech</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">컨퍼런스</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_EPTK')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 국제 전기전력 전시회 (EPTK 2026)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/6(수)~8(금)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">한국전기기술인협회 &nbsp;|&nbsp; 코엑스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전기전력</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_IBK')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #7B1FA2;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">IBK창공 혁신창업 기업모집 데모데이</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/6(수)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">IBK기업은행 &nbsp;|&nbsp; 미정 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">스타트업</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_CHOO')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #0288D1;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 Spring CHOO CHOO DAY (고려대 교내창업 IR 데모데이)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/7(목)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">고려대학교 &nbsp;|&nbsp; 고려대학교 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 무료</p>
+    <div><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">스타트업</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">데모데이</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_TI')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">TI (Texas Instruments) 현장 교육 이벤트</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/7(목)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">Texas Instruments &nbsp;|&nbsp; 미정 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">반도체</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">교육</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_DONGA')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #1976D2;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">동아전람 킨텍스 복합 전시 (스포츠/레저/기프트/홈리빙 등 7개)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/7(목)~10(일)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">동아전람 &nbsp;|&nbsp; 킨텍스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">종합</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_MBC')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">제70회 MBC 건축박람회</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/7(목)~10(일)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">MBC &nbsp;|&nbsp; 킨텍스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">건축/인테리어</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_KOBA')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #1565C0;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">KOBA 2026 (국제 방송/미디어/음향/조명 전시회)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/12(월)~15(목)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">한국방송기술인연합회 &nbsp;|&nbsp; 코엑스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">방송/미디어</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_NET')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #1976D2;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">차세대 네트워킹 월드 2026</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/14(목)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">데이터넷 &nbsp;|&nbsp; 서울 (미정) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">네트워크</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">세미나</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_MEGA')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">메가쇼 2026 시즌1 & 트래블쇼 2026</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/14(수)~17(일)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">메가쇼 &nbsp;|&nbsp; 킨텍스 제1전시장 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">여행/라이프</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">박람회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_CAFE')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">카페디저트페어 (CDF)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/14(목)~17(일)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">(주)유아림 &nbsp;|&nbsp; 코엑스 마곡 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 사전등록 무료</p>
+    <div><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">F&B</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">박람회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_MAXPO')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #7B1FA2;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">제5회 대한민국 막걸리엑스포 (MAXPO 2026)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/15(금)~17(일)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">(주)엠플로우 &nbsp;|&nbsp; aT센터 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">F&B</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_KIMEX')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 한국국제기계박람회 (KIMEX 2026)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/19(화)~22(금)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">코아미인포마마켓(주) &nbsp;|&nbsp; 창원컨벤션센터 (CECO) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">기계/제조</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_AWS')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #C62828;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">AWS Summit Seoul 2026</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/20(수)~21(목)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">Amazon Web Services &nbsp;|&nbsp; 코엑스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 무료 (사전등록 필수)</p>
+    <div><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI/Tech</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">클라우드</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_PLAY')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #1565C0;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 플레이엑스포 (PlayX4)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/21(수)~24(토)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">경기도 &nbsp;|&nbsp; 킨텍스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 사전등록 3,000원</p>
+    <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">게임</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_CLIMATE')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">제2회 기후테크 x AI 융합 기술 포럼</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/22(금)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">WIS 2026 부대행사 &nbsp;|&nbsp; 코엑스 컨퍼런스룸 301호 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">기후테크</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_GAMEAICON')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #1565C0;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">GAME AiCON Seoul 2026 (게임아이콘 서울)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/26(화)~28(목)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">Zempie &nbsp;|&nbsp; 강남 텍스파홀 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 무료 (인디 스튜디오)</p>
+    <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">게임</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">B2B</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_ICEC')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #1976D2;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">ICEC 2026 (제27회 국제전자상거래학회)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/27(수)~29(금)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">International Center for Electronic Commerce &nbsp;|&nbsp; 한국과학기술회관 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI/전자상거래</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">학술</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_COSMO')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #7B1FA2;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 코스모뷰티서울 (제40회 서울국제화장품&미용산업박람회)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/27(수)~29(금)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">(주)한국국제전시 &nbsp;|&nbsp; 코엑스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">뷰티/화장품</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">박람회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_SIDEX')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #0288D1;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">SIDEX 2026 (서울국제치과기자재전시회)</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/29(금)~31(일)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">서울특별시치과의사회 &nbsp;|&nbsp; 코엑스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 전시초청장 지참 시 무료</p>
+    <div><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">의료</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span></div>
+  </div>
+
+  <div onclick="openModal('MAY_01')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 노블 라이프 페스타</h3>
+      <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">5/1(금)~3(일)</span>
+    </div>
+    <p style="margin:0 0 8px;font-size:12px;color:#666">(주)세계전람 / 머니투데이 &nbsp;|&nbsp; 수원컨벤션센터 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <div><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">라이프스타일</span></div>
+  </div>
+
+</div>
+
+<!-- Modals -->
+<div id="modal-MAY_AIEXPO" class="modal-overlay" onclick="closeModal('MAY_AIEXPO')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #C62828">
+    <button onclick="closeModal('MAY_AIEXPO')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">AI EXPO KOREA 2026 (국제인공지능대전)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-06(수) ~ 05-08(금) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 사전등록 무료</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> (사)한국인공지능협회, (주)서울메쎄, 인공지능신문 &nbsp; <strong>장소:</strong> 코엑스 1층 Hall A</p>
+    <p style="margin:0 0 12px;font-size:12px;color:#777">약 350개사 600부스, 참관객 50,000명 목표</p>
+    <div style="margin-bottom:12px"><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI/Tech</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">전시회</span></div>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">국내 최대 단일 AI 전문 전시회. AI 솔루션, AI 인프라/플랫폼, AI+X 융합 등 전시. 부대행사로 AI EXPO KOREA SUMMIT, X+AI Conference, Global AI Summit, KAIST AI기술설명회, 1:1 VC 투자유치상담회 등 다수 세미나/컨퍼런스 동시 개최. Business Day(5/6~7)는 업계 관계자, Public Day(5/8)는 대학생 대상.</p>
+    <a href="https://www.aiexpo.co.kr/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_AITECH" class="modal-overlay" onclick="closeModal('MAY_AITECH')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #1565C0">
+    <button onclick="closeModal('MAY_AITECH')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">AI TECH 2026 - AI 융합 비즈니스 개발 컨퍼런스</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-06(수) 10:00~16:50 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 유료(140,000원~)</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> AI TECH 2026 조직위원회, (주)첨단, 서울메쎄 &nbsp; <strong>장소:</strong> 코엑스 3층 E홀 1~4</p>
+    <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI/Tech</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">컨퍼런스</span></div>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">"Make AI Work for Your Business" 주제. 에이전틱 AI, 피지컬 AI, AI 보안, 제조 AI 등 17개 세션. KAIST 장영재 교수, Microsoft 백인송 이사, LG CNS 주민식 연구소장 등 발표. 조기등록 140,000원 / 사전등록 170,000원 / 현장 210,000원 (3인 이상 단체 30% 할인).</p>
+    <a href="https://dubiz.co.kr/Event/479" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_EPTK" class="modal-overlay" onclick="closeModal('MAY_EPTK')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #F57F17">
+    <button onclick="closeModal('MAY_EPTK')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 국제 전기전력 전시회 (EPTK 2026)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-06(수) ~ 05-08(금) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 한국전기기술인협회, 케이훼어스(주), (주)서울메쎄 &nbsp; <strong>장소:</strong> 코엑스</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">전기전력 산업 전문 전시회. AI EXPO KOREA와 동시 개최.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_IBK" class="modal-overlay" onclick="closeModal('MAY_IBK')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #7B1FA2">
+    <button onclick="closeModal('MAY_IBK')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">IBK창공 혁신창업 기업모집 데모데이</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-06(수) 14:00 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> IBK기업은행 &nbsp; <strong>장소:</strong> 미정</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">2026년 하반기 IBK창공 혁신창업 기업 선정 행사. 마포, 구로, 대전, 부산, 광주, 대구 지역별 모집.</p>
+    <a href="https://onoffmix.com/event/340697" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_CHOO" class="modal-overlay" onclick="closeModal('MAY_CHOO')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #0288D1">
+    <button onclick="closeModal('MAY_CHOO')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 Spring CHOO CHOO DAY (고려대 교내창업 IR 데모데이)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-07(목) 14:00 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 무료</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 고려대학교 &nbsp; <strong>장소:</strong> 고려대학교</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">5개 창업 팀의 성과와 비전 발표 데모데이. 루키 스타트업의 실제 창업 과정과 성장 스토리를 공유합니다.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_TI" class="modal-overlay" onclick="closeModal('MAY_TI')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #F57F17">
+    <button onclick="closeModal('MAY_TI')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">TI (Texas Instruments) 현장 교육 이벤트</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-07(목) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> Texas Instruments &nbsp; <strong>장소:</strong> 한국 (상세 미정)</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">기초 설계 원리부터 고급 전력 공급 기술, 실제 적용 사례까지 배울 수 있는 현장 교육 이벤트.</p>
+    <a href="https://www.ti.com/ko-kr/about-ti/events/overview.html" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_DONGA" class="modal-overlay" onclick="closeModal('MAY_DONGA')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #1976D2">
+    <button onclick="closeModal('MAY_DONGA')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">동아전람 킨텍스 복합 전시</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-07(목) ~ 05-10(일) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 동아전람 &nbsp; <strong>장소:</strong> 킨텍스</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">킨텍스에서 동시 개최되는 7개 전시회: 제27회 동아 스포츠/레저산업/골프산업 박람회, 제29회 동아 차/공예박람회, 제31회 코리아 기프트쇼, 제42회 동아 홈&리빙 페어, 제26회 동아 가구 엑스포, 2026 서울 디지털프린팅/사인엑스포, 2026 서울 조명 박람회.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_MBC" class="modal-overlay" onclick="closeModal('MAY_MBC')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #2E7D32">
+    <button onclick="closeModal('MAY_MBC')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">제70회 MBC 건축박람회</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-07(목) ~ 05-10(일) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> MBC &nbsp; <strong>장소:</strong> 킨텍스</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">국내 최장수 건축 전시회. 건축자재, 인테리어, 리모델링 등 건축 관련 최신 트렌드와 제품을 한눈에 볼 수 있는 종합 박람회.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_KOBA" class="modal-overlay" onclick="closeModal('MAY_KOBA')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #1565C0">
+    <button onclick="closeModal('MAY_KOBA')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">KOBA 2026 (국제 방송/미디어/음향/조명 전시회)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-12(월) ~ 05-15(목) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> (주)한국이앤엑스, 한국방송기술인연합회 &nbsp; <strong>장소:</strong> 코엑스</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">방송, 미디어, 음향, 조명 분야 국제 전시회. 최신 방송 장비, 미디어 솔루션, 프로 오디오/조명 기술을 한자리에서 확인할 수 있습니다.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_NET" class="modal-overlay" onclick="closeModal('MAY_NET')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #1976D2">
+    <button onclick="closeModal('MAY_NET')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">차세대 네트워킹 월드 2026</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-14(목) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 데이터넷 &nbsp; <strong>장소:</strong> 서울 (미정)</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">차세대 네트워킹 기술 트렌드 세미나. 네트워크 인프라, 보안, 클라우드 등 주제를 다룹니다.</p>
+    <a href="https://www.datanet.co.kr/conference/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_MEGA" class="modal-overlay" onclick="closeModal('MAY_MEGA')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #2E7D32">
+    <button onclick="closeModal('MAY_MEGA')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">메가쇼 2026 시즌1 & 트래블쇼 2026</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-14(수) ~ 05-17(일) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 메가쇼 &nbsp; <strong>장소:</strong> 킨텍스 제1전시장 4/5홀</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">트래블쇼는 150개사 200부스, 잠재 여행객 10만 명 규모 여행 박람회. 메가쇼는 생활/리빙/소비재 전시회. 동시 개최.</p>
+    <a href="https://travelshow.co.kr/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_CAFE" class="modal-overlay" onclick="closeModal('MAY_CAFE')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #F57F17">
+    <button onclick="closeModal('MAY_CAFE')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">카페디저트페어 (CDF)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-14(목) ~ 05-17(일) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 사전등록 무료</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> (주)유아림 &nbsp; <strong>장소:</strong> 코엑스 마곡</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">연간 최대 규모 회차. 글로벌 커피/디저트 브랜드 대거 참여. 약 4만 명 방문 예상. 카페 창업 예정자 대상 정보 제공.</p>
+    <a href="https://www.cafedessertfair.com/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_MAXPO" class="modal-overlay" onclick="closeModal('MAY_MAXPO')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #7B1FA2">
+    <button onclick="closeModal('MAY_MAXPO')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">제5회 대한민국 막걸리엑스포 (MAXPO 2026)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-15(금) ~ 05-17(일) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> (주)엠플로우 &nbsp; <strong>장소:</strong> aT센터</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">대한민국 대표 전통주인 막걸리를 주제로 한 국내 유일의 막걸리 전문 박람회.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_KIMEX" class="modal-overlay" onclick="closeModal('MAY_KIMEX')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #F57F17">
+    <button onclick="closeModal('MAY_KIMEX')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 한국국제기계박람회 (KIMEX 2026)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-19(화) ~ 05-22(금) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 코아미인포마마켓(주) &nbsp; <strong>장소:</strong> 창원컨벤션센터 (CECO)</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">기계 산업 전문 국제 박람회. 공작기계, 산업용 로봇, 자동화 설비 등 최신 기계 기술을 전시합니다.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_AWS" class="modal-overlay" onclick="closeModal('MAY_AWS')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #C62828">
+    <button onclick="closeModal('MAY_AWS')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">AWS Summit Seoul 2026</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-20(수) ~ 05-21(목) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 무료 (사전등록 필수)</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> Amazon Web Services &nbsp; <strong>장소:</strong> 코엑스</p>
+    <div style="margin-bottom:12px"><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">AI/Tech</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">클라우드</span></div>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">국내 최대 클라우드 행사. Day 1 Industry Day: 9개 산업별 트랙 (AI 리더십, 리테일, 금융, SaaS, 제조, 피지컬 AI, 통신/미디어/게임, 트래블, 공공/헬스케어). Day 2 AI Day: 9개 AI 트랙 (모델 개발, 데이터 기반 AI, 에이전트 구축, AI 인프라, AI 보안/거버넌스 등). 100여 개 세부 강연.</p>
+    <h3 style="font-size:14px;margin:0 0 8px;color:#333">주요 트랙</h3>
+    <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+      <thead><tr style="background:#e9ecef">
+        <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">일자</th>
+        <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">테마</th>
+        <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">트랙</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">Day 1 (5/20)</td><td style="padding:6px 10px;font-weight:500">Industry Day</td><td style="padding:6px 10px;color:#555;font-size:13px">AI 리더십, 리테일, 금융, SaaS, 제조, 피지컬 AI, 통신/미디어/게임, 트래블, 공공/헬스케어</td></tr>
+        <tr><td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">Day 2 (5/21)</td><td style="padding:6px 10px;font-weight:500">AI Day</td><td style="padding:6px 10px;color:#555;font-size:13px">모델 개발, 데이터 기반 AI, 에이전트 구축, AI 인프라, AI 보안/거버넌스 등</td></tr>
+      </tbody>
+    </table>
+    <a href="https://aws.amazon.com/ko/events/summits/seoul/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_PLAY" class="modal-overlay" onclick="closeModal('MAY_PLAY')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #1565C0">
+    <button onclick="closeModal('MAY_PLAY')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 플레이엑스포 (PlayX4)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-21(수) ~ 05-24(토) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 사전등록 3,000원</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 경기도 &nbsp; <strong>장소:</strong> 킨텍스</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">수도권 최대 융복합 게임쇼. 콘솔, 아케이드, PC, 모바일, 인디게임 등 전 장르. B2B + B2C 동시 진행. 사전등록은 네이버 예약으로 5/15까지 가능.</p>
+    <a href="https://www.playx4.or.kr/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_CLIMATE" class="modal-overlay" onclick="closeModal('MAY_CLIMATE')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #2E7D32">
+    <button onclick="closeModal('MAY_CLIMATE')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">제2회 기후테크 x AI 융합 기술 포럼</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-22(금) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> WIS 2026 부대행사 &nbsp; <strong>장소:</strong> 코엑스 컨퍼런스룸 301호</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">기후테크와 AI 융합 기술 발표. AI 기반 환경기술 보유 기업 대상 포럼.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_GAMEAICON" class="modal-overlay" onclick="closeModal('MAY_GAMEAICON')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #1565C0">
+    <button onclick="closeModal('MAY_GAMEAICON')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">GAME AiCON Seoul 2026 (게임아이콘 서울)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-26(화) ~ 05-28(목) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 무료 (인디 스튜디오)</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> Zempie &nbsp; <strong>장소:</strong> 서울 강남구 테헤란로 518 3층 텍스파홀</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">아시아 게임 퍼블리싱과 글로벌 파트너십을 위한 B2B 중심 인디게임 이벤트. 글로벌 인디게임 셀렉션 참가팀 모집. 5/26 VIP/전시자 리셉션, 본 행사 5/27~28.</p>
+    <a href="https://www.gameaicon.com/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_ICEC" class="modal-overlay" onclick="closeModal('MAY_ICEC')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #1976D2">
+    <button onclick="closeModal('MAY_ICEC')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">ICEC 2026 (제27회 국제전자상거래학회)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-27(수) ~ 05-29(금) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> International Center for Electronic Commerce &nbsp; <strong>장소:</strong> 한국과학기술회관 (서울)</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">"Charting the Future of AX Ecosystems and AI-Driven E-Commerce" 주제. AI 기반 전자상거래, AX 생태계 논문 발표 및 토론.</p>
+    <a href="https://icec.net/icec2026/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_COSMO" class="modal-overlay" onclick="closeModal('MAY_COSMO')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #7B1FA2">
+    <button onclick="closeModal('MAY_COSMO')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 코스모뷰티서울 (제40회 서울국제화장품&미용산업박람회)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-27(수) ~ 05-29(금) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> (주)한국국제전시 &nbsp; <strong>장소:</strong> 코엑스</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">올해로 40회를 맞이하는 국내 대표 화장품/미용 산업 국제 박람회. K-뷰티 트렌드, 화장품 원료, OEM/ODM, 미용기기 등 전시.</p>
+  </div>
+</div>
+
+<div id="modal-MAY_SIDEX" class="modal-overlay" onclick="closeModal('MAY_SIDEX')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #0288D1">
+    <button onclick="closeModal('MAY_SIDEX')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">SIDEX 2026 (서울국제치과기자재전시회)</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-29(금) ~ 05-31(일) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 전시초청장 지참 시 무료</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 서울특별시치과의사회 &nbsp; <strong>장소:</strong> 코엑스</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">창립 101주년 기념 2026년 국제종합학술대회 및 제23회 서울국제치과기자재전시회. 최신 임상 노하우, 치과 기자재 전시.</p>
+    <a href="https://www.sidex.or.kr/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+  </div>
+</div>
+
+<div id="modal-MAY_01" class="modal-overlay" onclick="closeModal('MAY_01')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left:4px solid #2E7D32">
+    <button onclick="closeModal('MAY_01')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+    <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 노블 라이프 페스타</h2>
+    <p style="margin:0 0 12px;color:#555;font-size:13px">2026-05-01(금) ~ 05-03(일) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+    <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> (주)세계전람 / 머니투데이 &nbsp; <strong>장소:</strong> 수원컨벤션센터</p>
+    <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">라이프스타일 종합 박람회. 시니어 라이프, 건강, 취미, 여가 등 다양한 분야를 다루는 행사.</p>
+  </div>
+</div>
+
+<script>
+function switchView(v) {
+  document.getElementById('view-calendar').classList.toggle('active', v === 'calendar');
+  document.getElementById('view-list').classList.toggle('active', v === 'list');
+  document.getElementById('btn-cal').classList.toggle('active', v === 'calendar');
+  document.getElementById('btn-list').classList.toggle('active', v === 'list');
+}
+function openModal(id) {
+  document.getElementById('modal-' + id).classList.add('open');
+  document.getElementById('modal-' + id).style.display = 'flex';
+}
+function closeModal(id) {
+  const el = document.getElementById('modal-' + id);
+  el.classList.remove('open');
+  el.style.display = 'none';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.open').forEach(el => {
+    el.classList.remove('open'); el.style.display = 'none';
+  });
+});
+</script>
+</body>
+</html>
