@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>[LX MI] 세미나 브리핑 2026-04-06</title>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:'맑은 고딕','Malgun Gothic',sans-serif;margin:0;padding:20px;background:#f0f4f8;color:#222;font-size:14px}
+  h1{margin:0;font-size:20px;color:#1565C0}
+  .header{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+  .toggle-btn{padding:7px 16px;border-radius:6px;border:1px solid #1565C0;cursor:pointer;font-size:13px;background:#fff;color:#1565C0;margin-left:8px;font-family:inherit}
+  .toggle-btn.active{background:#1565C0;color:#fff}
+  .view{display:none}.view.active{display:block}
+  .modal-overlay{display:none}
+  .modal-overlay.open{display:flex!important}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <h1>📋 LX MI — 주간 세미나 브리핑</h1>
+    <div>
+      <button class="toggle-btn active" id="btn-cal" onclick="switchView('calendar')">📅 캘린더</button>
+      <button class="toggle-btn" id="btn-list" onclick="switchView('list')">☰ 목록</button>
+    </div>
+  </div>
+  <p style="margin:0 0 8px;font-size:13px;color:#555">탐색 기간: <strong>2026-04-06 ~ 2026-04-20</strong> &nbsp;|&nbsp; 발행일: 2026-04-06 &nbsp;|&nbsp; 총 <strong>14건</strong></p>
+  <div><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#거시경제 전망</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#금리 환율 전망</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#한미 통상 협상</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#관세 무역정책</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#수출입 규제</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#공급망 리스크</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#ESG 공시 의무화</span><span style="background:#e3f2fd;color:#1565C0;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">#탄소중립 정책</span></div>
+  <p style="margin:10px 0 0;font-size:13px;background:#e8f5e9;padding:8px 12px;border-radius:6px;color:#2E7D32">💡 2026년 4월 둘째주는 중동 전쟁 리스크와 환율 변동성, ESG 공시 의무화 로드맵 확정 등 주요 이슈가 집중된 시기입니다. 특히 4월 9일 서울 기후 컨퍼런스는 탄소중립 정책과 NDC 이행 관련 논의가 진행되며, 한국공인회계사회의 지속가능성인증포럼은 KSSB 기준 대응에 필수적인 행사입니다. 한미 통상 환경 변화에 따른 공급망 재편 세미나도 주목할 필요가 있습니다.</p>
+</div>
+
+<div id="view-calendar" class="view active">
+  <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.08)">
+    <thead><tr style="background:#f0f4f8"><th style="padding:8px;font-size:13px;color:#555;font-weight:600">일</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">월</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">화</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">수</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">목</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">금</th><th style="padding:8px;font-size:13px;color:#555;font-weight:600">토</th></tr></thead>
+    <tbody><tr><td style="padding:8px;background:#f8f9fa;min-height:70px;vertical-align:top"></td><td style="padding:8px;background:#f8f9fa;min-height:70px;vertical-align:top"></td><td style="padding:8px;background:#f8f9fa;min-height:70px;vertical-align:top"></td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">1</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">2</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">3</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">4</div>
+      
+    </td></tr><tr><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">5</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">6</div>
+      <div onclick="openModal('SEM_20260406_001')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">제23회 지속가능성인증포럼</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">7</div>
+      <div onclick="openModal('SEM_20260407_002')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">제23회 에너지전략포럼 …</div><div onclick="openModal('SEM_20260407_003')" style="background:#F57F17;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">매트랩 엑스포 2026 …</div><div onclick="openModal('SEM_20260407_004')" style="background:#C62828;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">2026 강남 스타트업 …</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">8</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">9</div>
+      <div onclick="openModal('SEM_20260409_005')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">2026 서울 기후 컨퍼…</div><div onclick="openModal('SEM_20260409_006')" style="background:#1976D2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">생산계획 & 재고관리 실…</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">10</div>
+      <div onclick="openModal('SEM_20260410_007')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">한미 조선업 협력과 기업…</div><div onclick="openModal('SEM_20260410_008')" style="background:#1976D2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">구매조달 Skill Up…</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">11</div>
+      
+    </td></tr><tr><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">12</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">13</div>
+      <div onclick="openModal('SEM_20260413_009')" style="background:#1976D2;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">SIMTOS 2026 (…</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">14</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">15</div>
+      <div onclick="openModal('SEM_20260415_010')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">2026 Taxonomy…</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">16</div>
+      <div onclick="openModal('SEM_20260416_011')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">2026 ESG 전망 세…</div><div onclick="openModal('SEM_20260416_012')" style="background:#F57F17;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">SIMTOS 2026 글…</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">17</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">18</div>
+      
+    </td></tr><tr><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">19</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">20</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">21</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">22</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fff">
+      <div style="font-size:13px;color:#333;font-weight:700;margin-bottom:2px">23</div>
+      <div onclick="openModal('SEM_20260423_013')" style="background:#1565C0;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">웹케시 금융 AI Age…</div><div onclick="openModal('SEM_20260423_014')" style="background:#2E7D32;color:#fff;border-radius:4px;padding:2px 5px;font-size:11px;margin-top:2px;cursor:pointer;line-height:1.4">서울건축박람회 2026 …</div>
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">24</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">25</div>
+      
+    </td></tr><tr><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#E53935;font-weight:400;margin-bottom:2px">26</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">27</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">28</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">29</div>
+      
+    </td><td style="padding:6px;vertical-align:top;min-height:70px;border-top:1px solid #eee;background:#fafafa">
+      <div style="font-size:13px;color:#333;font-weight:400;margin-bottom:2px">30</div>
+      
+    </td><td style="padding:8px;background:#f8f9fa;min-height:70px"></td><td style="padding:8px;background:#f8f9fa;min-height:70px"></td></tr></tbody>
+  </table></div>
+<div id="view-list" class="view" style="max-width:800px;margin:0 auto">
+    <div onclick="openModal('SEM_20260406_001')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">제23회 지속가능성인증포럼</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-06 (월)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">한국공인회계사회 &nbsp;|&nbsp; 온라인 (웨비나) &nbsp;|&nbsp; 온라인 &nbsp;|&nbsp; 무료</p>
+      <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260407_002')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">제23회 에너지전략포럼 - 중동전쟁의 의미와 생존 전략: 지산지소형 분산에너지 시스템</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-07 (화)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">서울경제신문 &nbsp;|&nbsp; 신라호텔 영빈관 루비홀 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 회원 제한(초청)</p>
+      <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260407_003')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">매트랩 엑스포 2026 코리아 (MATLAB EXPO 2026 Korea)</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-07 (화)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">매스웍스(MathWorks) &nbsp;|&nbsp; 코엑스 그랜드 볼룸 및 아셈 볼룸 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+      <div><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260407_004')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 강남 스타트업 포럼 1회: 창업의 시작과 성장 이야기</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-07 (화)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">오픈놀이 &nbsp;|&nbsp; 서울 강남구 역삼로 160 지하2층 대강당 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 무료</p>
+      <div><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX벤처스</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260409_005')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 서울 기후 컨퍼런스</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-09 (목)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">한국공기청정협회 &nbsp;|&nbsp; 코엑스 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+      <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260409_006')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">생산계획 & 재고관리 실무마스터 과정 - SCM·공급망 Data 기반 운영혁신</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-09 (목)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">JMAC Korea (일본능률협회컨설팅) &nbsp;|&nbsp; JMAC KOREA 강의실 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 유료(275,000원, VAT별도)</p>
+      <div><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260410_007')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">한미 조선업 협력과 기업의 사업기회 세미나</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-10 (금)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">법무법인(유) 세종 &nbsp;|&nbsp; 미정 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+      <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260410_008')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">구매조달 Skill Up 과정 - 원가 절감과 안정적 공급망 확보 전략</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-10 (금)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">JMAC Korea (일본능률협회컨설팅) &nbsp;|&nbsp; JMAC KOREA 강의실 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 유료(275,000원, VAT별도)</p>
+      <div><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260413_009')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">SIMTOS 2026 (제21회 서울국제생산제조기술전) - AI Autonomous Manufacturing Meets Talent</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-13 (월)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">한국공작기계산업협회 &nbsp;|&nbsp; 킨텍스 제1·2전시장 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 유료(20,000원, 사전등록 시 무료)</p>
+      <div><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260415_010')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 Taxonomy & 전환금융 글로벌 포럼</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-15 (수)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">기후에너지환경부 &nbsp;|&nbsp; 유탑마리나호텔&리조트 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+      <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260416_011')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">2026 ESG 전망 세미나: 패러다임 전환과 정책·규제·시장·기술의 변화</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-16 (목)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">한국생산성본부 &nbsp;|&nbsp; 한국생산성본부 생산성빌딩 &nbsp;|&nbsp; 하이브리드 &nbsp;|&nbsp; 유료(확인필요)</p>
+      <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260416_012')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">SIMTOS 2026 글로벌 제조/AX 혁신 컨퍼런스 - 피지컬 AI·디지털트윈 및 뿌리산업·소부장 컨퍼런스</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-16 (목)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">한국공작기계산업협회 &nbsp;|&nbsp; 킨텍스 제2전시장 7/8홀 컨퍼런스룸 A &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+      <div><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260423_013')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #2E7D32;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">웹케시 금융 AI Agent 컨퍼런스 2026</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-23 (목)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">웹케시 &nbsp;|&nbsp; FKI 타워 그랜드볼룸 &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+      <div><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX벤처스</span></div>
+    </div>
+    <div onclick="openModal('SEM_20260423_014')" style="background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:12px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left: 4px solid #F57F17;transition:box-shadow 0.15s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <h3 style="margin:0 0 4px;font-size:15px;line-height:1.4;flex:1">서울건축박람회 2026 (舊 서울경향하우징페어)</h3>
+        <span style="font-size:12px;color:#888;white-space:nowrap;margin-left:12px">2026-04-23 (목)</span>
+      </div>
+      <p style="margin:0 0 8px;font-size:12px;color:#666">경향하우징페어 &nbsp;|&nbsp; 학여울역 세텍(SETEC) &nbsp;|&nbsp; 오프라인 &nbsp;|&nbsp; 확인필요</p>
+      <div><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span></div>
+    </div></div>
+
+
+  <div id="modal-SEM_20260406_001" class="modal-overlay" onclick="closeModal('SEM_20260406_001')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260406_001')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">제23회 지속가능성인증포럼</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-06 (월) &nbsp;|&nbsp; 온라인
+        
+        &nbsp;|&nbsp; 무료
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 한국공인회계사회 &nbsp; <strong>장소:</strong> 온라인 (웨비나)</p>
+      <div style="margin-bottom:12px"></div>
+      <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">한국공인회계사회가 개최하는 지속가능성 인증 관련 정기 포럼입니다. EU 지속가능성보고 현황과 국내 KSSB 기준 대응 방안을 논의하며, ESG 공시 의무화에 대비한 기업 실무 전략을 제시합니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">EU 지속가능성보고 현황</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (삼일회계법인)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">국내 중요성 평가·공시주제 현황</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">전홍민 (성신여자대학교)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">종합토론</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">백태영 (성균관대학교)</td>
+        </tr></tbody>
+      </table>
+
+      <p style="font-size:12px;color:#555"><strong>연사:</strong> 백태영 <span style="color:#777;font-size:12px">(성균관대학교, 명예교수)</span> &nbsp;/&nbsp; 이상호 <span style="color:#777;font-size:12px">(자본시장연구원, 연구위원)</span> &nbsp;/&nbsp; 주성호 <span style="color:#777;font-size:12px">(한국회계기준원, 실장)</span> &nbsp;/&nbsp; 박정은 <span style="color:#777;font-size:12px">(대신경제연구소, 센터장)</span></p>
+      <a href="https://www.kicpa.or.kr" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+  <div id="modal-SEM_20260407_002" class="modal-overlay" onclick="closeModal('SEM_20260407_002')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260407_002')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">제23회 에너지전략포럼 - 중동전쟁의 의미와 생존 전략: 지산지소형 분산에너지 시스템</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-07 (화) &nbsp;|&nbsp; 오프라인
+        &nbsp;|&nbsp;07:00–09:10
+        &nbsp;|&nbsp; 회원 제한(초청)
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 서울경제신문 &nbsp; <strong>장소:</strong> 신라호텔 영빈관 루비홀</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울 중구</p>
+      <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">중동 전쟁 여파로 에너지 대외 의존도가 높은 한국 경제의 구조적 취약성을 진단하고, 지산지소형 분산에너지 시스템 구축을 통한 에너지 전환 정책 과제를 논의합니다. 기후에너지환경부 2차관이 기조연설을 맡습니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">07:00–07:30</td>
+          <td style="padding:6px 10px;font-weight:500">개회 및 기조연설 - 중동전쟁의 의미와 생존 전략: 에너지 전환을 위한 지산지소 확산</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">이호현 (기후에너지환경부)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">07:30–08:20</td>
+          <td style="padding:6px 10px;font-weight:500">주제강연 - 지산지소 구현과 전력산업 발전 방향</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">박종배 (건국대)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">08:20–09:10</td>
+          <td style="padding:6px 10px;font-weight:500">정책발표 - 전력 생산지의 위기와 기회: 지산지소 인센티브 정책의 필요성</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">황규철 (전라남도 녹색에너지연구원)</td>
+        </tr></tbody>
+      </table>
+
+      <p style="font-size:12px;color:#555"><strong>연사:</strong> 이호현 <span style="color:#777;font-size:12px">(기후에너지환경부, 2차관)</span> &nbsp;/&nbsp; 박종배 <span style="color:#777;font-size:12px">(건국대 전기전자공학부, 교수)</span> &nbsp;/&nbsp; 황규철 <span style="color:#777;font-size:12px">(전라남도 녹색에너지연구원, 원장)</span></p>
+      
+    </div>
+  </div>
+  <div id="modal-SEM_20260407_003" class="modal-overlay" onclick="closeModal('SEM_20260407_003')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260407_003')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">매트랩 엑스포 2026 코리아 (MATLAB EXPO 2026 Korea)</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-07 (화) &nbsp;|&nbsp; 오프라인
+        
+        &nbsp;|&nbsp; 확인필요
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 매스웍스(MathWorks) &nbsp; <strong>장소:</strong> 코엑스 그랜드 볼룸 및 아셈 볼룸</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울특별시 강남구 영동대로 513 코엑스</p>
+      <div style="margin-bottom:12px"><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">올해로 22회를 맞이한 매트랩 엑스포는 'AI 기반 엔지니어링의 미래 조명'을 주제로 개최됩니다. 5개 기술 트랙과 30개 이상의 세션으로 구성되며, 삼성전자, 현대자동차, LG에너지솔루션 등 국내 주요 기업의 고객 성공 사례 21건이 발표됩니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">기조연설: 엔지니어링 설계 전반의 AI 변화</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">사미르 M. 프라부 (매스웍스)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">AI 기반 엔지니어링 워크플로우 라이브 데모</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (매스웍스)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">고객 성공 사례 발표 (삼성전자, 현대자동차, LG에너지솔루션 등)</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr></tbody>
+      </table>
+
+      <p style="font-size:12px;color:#555"><strong>연사:</strong> 사미르 M. 프라부 (Sameer M. Prabhu) <span style="color:#777;font-size:12px">(매스웍스, 인더스트리 부문 이사)</span> &nbsp;/&nbsp; 박주일 <span style="color:#777;font-size:12px">(매스웍스코리아, 사장)</span> &nbsp;/&nbsp; 김영우 <span style="color:#777;font-size:12px">(매스웍스코리아, 전무)</span></p>
+      <a href="https://www.matlabexpo.com/kr/2026.html" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+  <div id="modal-SEM_20260407_004" class="modal-overlay" onclick="closeModal('SEM_20260407_004')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260407_004')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 강남 스타트업 포럼 1회: 창업의 시작과 성장 이야기</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-07 (화) &nbsp;|&nbsp; 오프라인
+        &nbsp;|&nbsp;18:30–21:00
+        &nbsp;|&nbsp; 무료
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 오픈놀이 &nbsp; <strong>장소:</strong> 서울 강남구 역삼로 160 지하2층 대강당</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울특별시 강남구 역삼로 160</p>
+      <div style="margin-bottom:12px"><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX벤처스</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">선배 창업가로부터 스타트업의 현실과 창업 및 성장 이야기를 생생하게 들을 수 있는 강연 행사입니다. 창업과 투자에 관심 있는 예비 창업가 및 스타트업 관계자들을 대상으로 진행되며, 사전 질문 등록을 통해 실질적인 궁금증을 해소할 수 있습니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody><tr><td colspan="3" style="padding:12px;color:#999;font-size:13px">아젠다 미공개</td></tr></tbody>
+      </table>
+
+      
+      
+    </div>
+  </div>
+  <div id="modal-SEM_20260409_005" class="modal-overlay" onclick="closeModal('SEM_20260409_005')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260409_005')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 서울 기후 컨퍼런스</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-09 (목) &nbsp;|&nbsp; 오프라인
+        
+        &nbsp;|&nbsp; 확인필요
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 한국공기청정협회 &nbsp; <strong>장소:</strong> 코엑스</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울특별시 강남구 영동대로 513</p>
+      <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">정부, 국회, 산업계, 학계, 금융권 전문가들이 참여하는 기후위기 대응 종합 컨퍼런스입니다. 2035 NDC 이행 전략, 기후테크 기술 동향, 탄소중립 정책 방향 등을 논의하며, 실질적인 실행 전략을 공유하는 플랫폼입니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">기후위기 정책 설계와 시장 변화 전망</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">송영일 (한국기후변화학회)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">기후테크 혁신기술과 산업화 전략</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">기업의 기후 대응 전략</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr></tbody>
+      </table>
+
+      <p style="font-size:12px;color:#555"><strong>연사:</strong> 송영일 <span style="color:#777;font-size:12px">(한국기후변화학회, 회장)</span> &nbsp;/&nbsp; 최민지 <span style="color:#777;font-size:12px">(온실가스종합정보센터, 센터장)</span> &nbsp;/&nbsp; 김태선 <span style="color:#777;font-size:12px">(나무이엔알, 대표이사)</span> &nbsp;/&nbsp; 문종우 <span style="color:#777;font-size:12px">(한국환경연구원, 부연구위원)</span></p>
+      
+    </div>
+  </div>
+  <div id="modal-SEM_20260409_006" class="modal-overlay" onclick="closeModal('SEM_20260409_006')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260409_006')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">생산계획 & 재고관리 실무마스터 과정 - SCM·공급망 Data 기반 운영혁신</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-09 (목) &nbsp;|&nbsp; 오프라인
+        &nbsp;|&nbsp;10:00–17:00
+        &nbsp;|&nbsp; 유료(275,000원, VAT별도)
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> JMAC Korea (일본능률협회컨설팅) &nbsp; <strong>장소:</strong> JMAC KOREA 강의실</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울 강서구 마곡나루</p>
+      <div style="margin-bottom:12px"><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">현장 Data 신뢰도 향상과 AI 시대 대비 생산관리 운영혁신을 위한 실무 교육입니다. BOM 및 마스터정보 관리, 시스템과 현업 간 불일치 해소, Data와 Process 중심 업무 표준화 체제 구축을 다룹니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">10:00–12:00</td>
+          <td style="padding:6px 10px;font-weight:500">생산계획 수립과 BOM 관리 기술</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (JMAC Korea)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">13:00–15:00</td>
+          <td style="padding:6px 10px;font-weight:500">재고관리 최적화와 Data 표준화</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (JMAC Korea)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">15:00–17:00</td>
+          <td style="padding:6px 10px;font-weight:500">AI 시대 생산관리 운영혁신 사례</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (JMAC Korea)</td>
+        </tr></tbody>
+      </table>
+
+      
+      <a href="https://www.jmac.co.kr" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+  <div id="modal-SEM_20260410_007" class="modal-overlay" onclick="closeModal('SEM_20260410_007')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #F57F17;">
+      <button onclick="closeModal('SEM_20260410_007')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">한미 조선업 협력과 기업의 사업기회 세미나</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-10 (금) &nbsp;|&nbsp; 오프라인
+        
+        &nbsp;|&nbsp; 확인필요
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 법무법인(유) 세종 &nbsp; <strong>장소:</strong> 온라인/미정</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울(상세 장소 확인필요)</p>
+      <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">한미 관세협상 타결 이후 조선업 분야 협력 확대에 따른 기업의 사업기회를 분석하는 세미나입니다. 미국 조선업 투자 패키지와 관련 법률·규제 이슈를 다룹니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody><tr><td colspan="3" style="padding:12px;color:#999;font-size:13px">아젠다 미공개</td></tr></tbody>
+      </table>
+
+      
+      
+    </div>
+  </div>
+  <div id="modal-SEM_20260410_008" class="modal-overlay" onclick="closeModal('SEM_20260410_008')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260410_008')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">구매조달 Skill Up 과정 - 원가 절감과 안정적 공급망 확보 전략</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-10 (금) &nbsp;|&nbsp; 오프라인
+        &nbsp;|&nbsp;10:00–17:00
+        &nbsp;|&nbsp; 유료(275,000원, VAT별도)
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> JMAC Korea (일본능률협회컨설팅) &nbsp; <strong>장소:</strong> JMAC KOREA 강의실</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울 강서구 마곡나루</p>
+      <div style="margin-bottom:12px"><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">외부환경 변화에 대응한 혁신적 구매활동 구체화, 전략적 구매업무와 역할 실행 체제 습득, Supplier 관리와 Win-Win 협력구조 구축을 다루는 실무 교육입니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">10:00–12:00</td>
+          <td style="padding:6px 10px;font-weight:500">구매품 특성별 체계적 구매전략 수립</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (JMAC Korea)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">13:00–15:00</td>
+          <td style="padding:6px 10px;font-weight:500">협력업체와의 지속가능한 협력체계 구축</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (JMAC Korea)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">15:00–17:00</td>
+          <td style="padding:6px 10px;font-weight:500">코스트 다운 접근 방법론과 테크닉</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (JMAC Korea)</td>
+        </tr></tbody>
+      </table>
+
+      
+      <a href="https://www.jmac.co.kr" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+  <div id="modal-SEM_20260413_009" class="modal-overlay" onclick="closeModal('SEM_20260413_009')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260413_009')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">SIMTOS 2026 (제21회 서울국제생산제조기술전) - AI Autonomous Manufacturing Meets Talent</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-13 (월) &nbsp;|&nbsp; 오프라인
+        &nbsp;|&nbsp;10:00–17:00
+        &nbsp;|&nbsp; 유료(20,000원, 사전등록 시 무료)
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 한국공작기계산업협회 &nbsp; <strong>장소:</strong> 킨텍스 제1·2전시장</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">경기도 고양시 일산서구 킨텍스로 217-60</p>
+      <div style="margin-bottom:12px"><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">국내 최대 생산제조기술 전시회로 'AI 자율제조, 인재와 연결하다'를 주제로 4월 13~17일 5일간 개최됩니다. AI 팩토리, 로봇-장비, CNC 시스템, 다이캐스팅 등 네 개 테마관과 금속절삭·금형기술관, 소재부품·제어기술관 등 다섯 개 전문관이 운영됩니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">M.A.D.E. in SIMTOS - AI 팩토리 특별관</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">로봇 및 디지털제조기술 특별전</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">커리어 커넥트(잡페어) 및 여성 엔지니어 네트워크 포럼</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr></tbody>
+      </table>
+
+      
+      <a href="https://simtos.org" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+  <div id="modal-SEM_20260415_010" class="modal-overlay" onclick="closeModal('SEM_20260415_010')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #F57F17;">
+      <button onclick="closeModal('SEM_20260415_010')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 Taxonomy & 전환금융 글로벌 포럼</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-15 (수) &nbsp;|&nbsp; 오프라인
+        &nbsp;|&nbsp;11:00–13:20
+        &nbsp;|&nbsp; 확인필요
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 기후에너지환경부 &nbsp; <strong>장소:</strong> 유탑마리나호텔&리조트</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">전라남도 여수시</p>
+      <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">녹색분류체계(택소노미)와 전환금융을 주제로 글로벌 정책과 금융 역할을 논의하는 포럼입니다. 녹색투자 기준 정립과 금융기관의 전환금융 역할 확대 방안을 모색합니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">11:00</td>
+          <td style="padding:6px 10px;font-weight:500">녹색전환을 위한 택소노미의 역할</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">전환금융의 역할</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr></tbody>
+      </table>
+
+      
+      
+    </div>
+  </div>
+  <div id="modal-SEM_20260416_011" class="modal-overlay" onclick="closeModal('SEM_20260416_011')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #F57F17;">
+      <button onclick="closeModal('SEM_20260416_011')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">2026 ESG 전망 세미나: 패러다임 전환과 정책·규제·시장·기술의 변화</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-16 (목) &nbsp;|&nbsp; 하이브리드
+        &nbsp;|&nbsp;09:00–18:00
+        &nbsp;|&nbsp; 유료(확인필요)
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 한국생산성본부 &nbsp; <strong>장소:</strong> 한국생산성본부 생산성빌딩</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울시 종로구 새문안로5가길 32</p>
+      <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">2026년 ESG 패러다임 전환에 따른 정책·규제·시장 변화와 기업 대응 전략을 제시하는 세미나입니다. KSSB 기준, AI 기반 ESG 정보관리, 글로벌 규제 동향 등 5개 핵심 주제를 다룹니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">정부 ESG 정책 방향과 제도 변화 전망</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">글로벌 ESG 규제 트렌드와 기업 대응 전략</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">KSSB 기준 주요 내용 및 대응방안</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">AI 기반의 ESG 정보관리 전환 트렌드</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">ESG 투자 트렌드와 기업 대응 전략</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr></tbody>
+      </table>
+
+      
+      <a href="https://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=46711" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+  <div id="modal-SEM_20260416_012" class="modal-overlay" onclick="closeModal('SEM_20260416_012')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260416_012')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">SIMTOS 2026 글로벌 제조/AX 혁신 컨퍼런스 - 피지컬 AI·디지털트윈 및 뿌리산업·소부장 컨퍼런스</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-16 (목) &nbsp;|&nbsp; 오프라인
+        
+        &nbsp;|&nbsp; 확인필요
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 한국공작기계산업협회 &nbsp; <strong>장소:</strong> 킨텍스 제2전시장 7/8홀 컨퍼런스룸 A</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">경기도 고양시 일산서구 킨텍스로 217-60</p>
+      <div style="margin-bottom:12px"><span style="background:#F57F17;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX세미콘</span><span style="background:#0288D1;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX글라스</span><span style="background:#7B1FA2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LXMMA</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">국내 최대 생산제조기술 전문 전시회 SIMTOS 2026의 핵심 부대행사로, 피지컬 AI와 자율제조(Autonomous Manufacturing), 뿌리산업과 소부장에 대해 집중 조명합니다. 각 분야 최고의 전문가를 초빙하여 양일간 각 5개의 기조강연이 진행됩니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">피지컬 AI(Physical AI) 기조강연</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">자율제조(Autonomous Manufacturing) 세션</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">뿌리산업·소부장 기조강연</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"></td>
+        </tr></tbody>
+      </table>
+
+      
+      <a href="https://simtos.org" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+  <div id="modal-SEM_20260423_013" class="modal-overlay" onclick="closeModal('SEM_20260423_013')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #2E7D32;">
+      <button onclick="closeModal('SEM_20260423_013')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">웹케시 금융 AI Agent 컨퍼런스 2026</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-23 (목) &nbsp;|&nbsp; 오프라인
+        
+        &nbsp;|&nbsp; 확인필요
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 웹케시 &nbsp; <strong>장소:</strong> FKI 타워 그랜드볼룸</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울특별시 영등포구 여의대로 24 FKI 타워</p>
+      <div style="margin-bottom:12px"><span style="background:#1565C0;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX인터내셔널</span><span style="background:#1976D2;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX판토스</span><span style="background:#C62828;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX벤처스</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">'RDB 기반 에이전트 구축 핵심 전략 공개'를 슬로건으로, 실제 금융 현장에서 검증된 구축 사례와 기술 혁신 내용을 중심으로 진행됩니다. 금융 AI 에이전트 기술의 상용화 및 확장 단계 진입을 선언하며, 글로벌 NL2SQL 리더보드 'Spider 2.0'에서 1위를 기록한 기술적 노하우를 공유합니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">키노트: 고객 대신 에이전트가 금융을 수행하는 시대</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px">강원주 (웹케시)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">1부: AI 에이전트 적용 사례와 기술 구조 (AI Banking, Branch Q)</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (웹케시)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">2부: 금융권 대용량 데이터 처리 핵심 기술 및 AI 에이전트 학습 전략</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (웹케시)</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px;white-space:nowrap;color:#555;font-size:13px">미상</td>
+          <td style="padding:6px 10px;font-weight:500">Spider 2.0 리더보드 1위 달성 기술 노하우 공유</td>
+          <td style="padding:6px 10px;color:#555;font-size:13px"> (웹케시)</td>
+        </tr></tbody>
+      </table>
+
+      <p style="font-size:12px;color:#555"><strong>연사:</strong> 강원주 <span style="color:#777;font-size:12px">(웹케시, 대표)</span></p>
+      
+    </div>
+  </div>
+  <div id="modal-SEM_20260423_014" class="modal-overlay" onclick="closeModal('SEM_20260423_014')" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center">
+    <div onclick="event.stopPropagation()" style="background:#fff;border-radius:12px;max-width:680px;width:90%;max-height:85vh;overflow-y:auto;padding:28px;position:relative;border-left: 4px solid #F57F17;">
+      <button onclick="closeModal('SEM_20260423_014')" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#666">✕</button>
+      <h2 style="margin:0 0 8px;font-size:18px;line-height:1.4">서울건축박람회 2026 (舊 서울경향하우징페어)</h2>
+      <p style="margin:0 0 12px;color:#555;font-size:13px">
+        2026-04-23 (목) &nbsp;|&nbsp; 오프라인
+        &nbsp;|&nbsp;10:00–18:00
+        &nbsp;|&nbsp; 확인필요
+      </p>
+      <p style="margin:0 0 4px;font-size:13px"><strong>주최:</strong> 경향하우징페어 &nbsp; <strong>장소:</strong> 학여울역 세텍(SETEC)</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#777">서울특별시 강남구 남부순환로 3104</p>
+      <div style="margin-bottom:12px"><span style="background:#2E7D32;color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;margin:2px;display:inline-block">LX하우시스</span></div>
+      <p style="font-size:13px;color:#444;line-height:1.6;margin-bottom:16px">건축·전원주택·인테리어 박람회로, 새로운 이름으로 재출범한 서울건축박람회입니다. 4월 23일부터 26일까지 4일간 학여울역 세텍(SETEC)에서 개최되며, 스마트홈 및 인테리어 관련 최신 트렌드를 확인할 수 있습니다.</p>
+
+      <h3 style="font-size:14px;margin:0 0 8px;color:#333">아젠다</h3>
+      <table style="width:100%;border-collapse:collapse;background:#f8f9fa;border-radius:6px;overflow:hidden;margin-bottom:12px">
+        <thead><tr style="background:#e9ecef">
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">시간</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">세션</th>
+          <th style="padding:6px 10px;text-align:left;font-size:12px;color:#666">연사</th>
+        </tr></thead>
+        <tbody><tr><td colspan="3" style="padding:12px;color:#999;font-size:13px">아젠다 미공개</td></tr></tbody>
+      </table>
+
+      
+      <a href="https://khfair.com/setec/" target="_blank" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#1565C0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">등록 페이지 →</a>
+    </div>
+  </div>
+
+<script>
+function switchView(v) {
+  document.getElementById('view-calendar').classList.toggle('active', v === 'calendar');
+  document.getElementById('view-list').classList.toggle('active', v === 'list');
+  document.getElementById('btn-cal').classList.toggle('active', v === 'calendar');
+  document.getElementById('btn-list').classList.toggle('active', v === 'list');
+}
+function openModal(id) {
+  document.getElementById('modal-' + id).classList.add('open');
+  document.getElementById('modal-' + id).style.display = 'flex';
+}
+function closeModal(id) {
+  const el = document.getElementById('modal-' + id);
+  el.classList.remove('open');
+  el.style.display = 'none';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.open').forEach(el => {
+    el.classList.remove('open'); el.style.display = 'none';
+  });
+});
+</script>
+</body>
+</html>
